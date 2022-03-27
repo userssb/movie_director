@@ -100,3 +100,4 @@ app.get("/directors/:directorId/movies/", async (request, response) => {
   const result = await db.all(getDirectorMovieQuery);
   response.send(result);
 });
+module.exports=app;
